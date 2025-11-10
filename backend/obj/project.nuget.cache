@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xzq2SkEVu1M=",
+  "success": true,
+  "projectFilePath": "/home/andriuszurba/projects/cafe/backend/backend.csproj",
+  "expectedPackageFiles": [
+    "/home/andriuszurba/.nuget/packages/microsoft.netcore.app.ref/8.0.21/microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
+    "/home/andriuszurba/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.21/microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512",
+    "/home/andriuszurba/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.21/microsoft.netcore.app.host.linux-x64.8.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
