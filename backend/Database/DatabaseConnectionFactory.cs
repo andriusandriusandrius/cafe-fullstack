@@ -5,7 +5,7 @@ namespace backend.Database
     public class DatabaseConnectionFactory {
         private readonly string _connectionString;
 
-        private DatabaseConnectionFactory(IConfiguration connectionString)
+        public DatabaseConnectionFactory(IConfiguration connectionString)
         {
             _connectionString = connectionString.GetConnectionString("CafeConnection") ?? throw new InvalidOperationException("No cafe connection string found");
         }
