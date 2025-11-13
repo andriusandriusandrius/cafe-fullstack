@@ -1,6 +1,6 @@
-namespace backend.Models.Coffee
+namespace backend.Models.Drink
 {
-    public enum CoffeSize
+    public enum DrinkSize
     {
         Small,
         Medium,

@@ -1,19 +1,19 @@
-namespace backend.Models.Coffee
+namespace backend.Models.Drink
 {
-    public class Coffee
+    public class Drink
     {
         private Guid Id {get;set;}
         private String Name {get;set;} = String.Empty;
         private Double Price {get;set;}
         private String Recipe {get;set;} = String.Empty;
-        private CoffeSize Size {get;set;}
+        private DrinkSize Size {get;set;}
         private ICollection<Ingredient> Ingredients = new List<Ingredient>();
-        private ICoffeeBehaviour? Behaviour {get;}
+        private IDrinkBehaviour? Behaviour {get;}
 
         public bool IsHot => Behaviour is HotCoffeeBehaviour;
         public bool IsCold => Behaviour is ColdCoffeeBehaviour;
 
-        public Coffee(Guid Id, String Name, Double Price, String Recipe, ICollection<Ingredient> Ingredients, CoffeSize Size, ICoffeeBehaviour Behaviour)
+        public Drink(Guid Id, String Name, Double Price, String Recipe, ICollection<Ingredient> Ingredients, DrinkSize Size, IDrinkBehaviour Behaviour)
         {
             this.Id = Id;
             this.Name = Name;
@@ -23,7 +23,7 @@ namespace backend.Models.Coffee
             this.Ingredients = Ingredients;
             this.Behaviour = Behaviour;
 
-            if(IsCold && Size == CoffeSize.Large ) throw new ArgumentException($"Size {Size} is not allowed for cold coffees");
+            if(IsCold && Size == DrinkSize.Large ) throw new ArgumentException($"Size {Size} is not allowed for cold coffees");
         }
 
 
